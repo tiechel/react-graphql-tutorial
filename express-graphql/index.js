@@ -1,6 +1,5 @@
 const express = require("express");
 const { ApolloServer, gql } = require("apollo-server-express");
-const { makeExecutableSchema } = require("graphql-tools");
 
 // mock data
 const books = [
@@ -42,14 +41,6 @@ const corsOptions = {
   origin: "http://localhost:3000",
   optionsSucessStatus: 200
 };
-
-// GraphQLのエンドポイント追加
-// app.use(
-//   "/graphql",
-//   bodyParser.json(),
-//   cors(corsOptions),
-//   graphqlExpress({ schema })
-// );
 
 // サーバー起動
 app.listen(4000, () => {

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import Books from "./Books"
-// import logo from './logo.svg';
-// import './App.css';
 
 const client = new ApolloClient({ uri: "http://localhost:4000/graphql" })
 
