@@ -53,7 +53,7 @@ const corsOptions = {
 
 // サーバー起動
 app.listen(4000, () => {
-  console.log(`Go to http://locahost:4000/graphiql${server.graphqlPath} to run queries!`);
+  console.log(`Go to http://localhost:4000${server.graphqlPath} to run queries!`);
 });
 
 server.applyMiddleware({
